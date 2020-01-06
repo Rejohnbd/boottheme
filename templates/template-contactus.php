@@ -3,7 +3,8 @@
 Template Name: Contact Us
 */
 ?>
-<?php get_header('secondary'); ?>
+<?php get_header(); ?>
+<section class="page-wrap">
 	<div class="container">
 		<h2><?php the_title();?></h2>
 		<div class="row">
@@ -15,4 +16,5 @@ Template Name: Contact Us
 			</div>
 		</div>
 	</div>
+</section>
 <?php get_footer(); ?>
