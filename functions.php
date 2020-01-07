@@ -25,7 +25,8 @@ function load_js()
 add_action('wp_enqueue_scripts', 'load_js');
 
 // Theme Options
-add_theme_support('menus');
+add_theme_support('menus');				//Use for nav menu
+add_theme_support('post-thumbnails');	//Use for feature image
 
 // Menus
 register_nav_menus(
@@ -35,3 +36,7 @@ register_nav_menus(
 		'footer-menu' => 'Footer Menu Location'
 	)
 );
+
+// Custom Image Size
+add_image_size('blog-large', 600, 400, false);
+add_image_size('blog-small', 300, 200, false);
