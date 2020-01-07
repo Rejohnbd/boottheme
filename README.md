@@ -3,3 +3,5 @@ category-blog.php is upper hierarchy than archive.php. when exist category-blog.
 Use of Posts, Pagination and Thumbnails in posts and pages.
 
 searchform.php overwite the whole of search. 
+
+Custom Post Type use single.php default template.
