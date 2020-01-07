@@ -10,7 +10,16 @@
 				<?php get_template_part('includes/section','cars'); ?>
 				<?php wp_link_pages(); ?>
 			</div>
-			<div class="col-lg-6"></div>
+			<div class="col-lg-6">
+				<ul>
+					<?php if(get_post_meta($post->ID, 'Colour', true)): ?>
+						<li>Colour: <?php echo get_post_meta($post->ID, 'Colour', true); ?></li>
+					<?php endif; ?>
+					<?php if(get_post_meta($post->ID, 'Registration', true)): ?>
+						<li>Registation: <?php echo get_post_meta($post->ID, 'Registration', true); ?></li>
+					<?php endif;?>
+				</ul>
+			</div>
 		</div>
 		
 	</div>
